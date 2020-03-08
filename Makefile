@@ -18,3 +18,6 @@ darwin:
 	GOOS=darwin $(GO_BUILD) $(GO_LDFLAGS) -o "$(BUILD_DIR)/darwin/crawler" "${REPO_PATH}"
 windows:
 	GOOS=windows $(GO_BUILD) $(GO_LDFLAGS) -o "$(BUILD_DIR)/windows/crawler.exe" "${REPO_PATH}"
+
+clean:
+	$(GO_CLEAN)
