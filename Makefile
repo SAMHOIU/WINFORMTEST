@@ -9,3 +9,5 @@ GO_TEST=$(GO_CMD) test
 GO_GET=$(GO_CMD) get
 
 BUILD_DIR=build
+
+all: linux darwin windows
