@@ -21,3 +21,4 @@ windows:
 
 clean:
 	$(GO_CLEAN)
+	rm -fr $(BUILD_DIR)
