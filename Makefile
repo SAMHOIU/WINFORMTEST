@@ -11,3 +11,6 @@ GO_GET=$(GO_CMD) get
 BUILD_DIR=build
 
 all: linux darwin windows
+
+linux:
+	GOOS=linux $(GO_BUILD) $(GO_LDFLAGS) -o "$(BUILD_DIR)/linux/crawler" "${REPO_PATH}"
