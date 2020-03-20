@@ -6,3 +6,4 @@ Crawler4U is a general purpose focused crawling and scraping tool based on json 
 
 ## Install
 The Golang way:
+```sh
