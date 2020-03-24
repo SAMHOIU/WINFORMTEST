@@ -16,3 +16,6 @@ Before you can build the `crawler` from source. A workable golang development en
 
 ```sh
 go get -d crawler.club/crawler
+cd $GOPATH/src/crawler.club/crawler
+make
+```
