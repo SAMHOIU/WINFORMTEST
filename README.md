@@ -13,3 +13,6 @@ Or download the pre-built binaries from [releases](https://github.com/crawlerclu
 
 ## Build from source
 Before you can build the `crawler` from source. A workable golang development environment is needed. Downlad golang [here](https://golang.org/dl/) and then execute the following commands.
+
+```sh
+go get -d crawler.club/crawler
