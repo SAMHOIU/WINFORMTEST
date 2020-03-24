@@ -19,3 +19,6 @@ go get -d crawler.club/crawler
 cd $GOPATH/src/crawler.club/crawler
 make
 ```
+
+## Usage
+[中文](usage_cn.md)
