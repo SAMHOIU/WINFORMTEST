@@ -10,3 +10,5 @@ The Golang way:
 go get crawler.club/crawler
 ```
 Or download the pre-built binaries from [releases](https://github.com/crawlerclub/crawler/releases) for you system.
+
+## Build from source
