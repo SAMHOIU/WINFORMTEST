@@ -25,3 +25,4 @@ make
 
 ## Companies using crawler.club/crawler
 * [elensdata](https://www.elensdata.com/)
+* [huawei](https://www.huawei.com/)
