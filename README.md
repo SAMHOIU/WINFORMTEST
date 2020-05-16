@@ -28,3 +28,4 @@ make
 * [huawei](https://www.huawei.com/)
 * [baidu](https://www.baidu.com)
 * [bytedance](https://www.bytedance.com/)
+* [zenia](https://www.zenia.ai/)
