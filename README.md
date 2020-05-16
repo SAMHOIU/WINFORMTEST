@@ -27,3 +27,4 @@ make
 * [elensdata](https://www.elensdata.com/)
 * [huawei](https://www.huawei.com/)
 * [baidu](https://www.baidu.com)
+* [bytedance](https://www.bytedance.com/)
