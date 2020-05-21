@@ -1,2 +1,6 @@
 
 {
+  "name": "article",
+  "example_url": "http://www.newsmth.net/nForum/article/AI/65703",
+  "default_fields": true,
+  "rules": {
