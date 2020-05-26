@@ -13,3 +13,7 @@
       {
         "type": "dom",
         "key": "posts",
+        "xpath": "//table[contains(concat(' ', @class, ' '), ' article ')]"
+      }
+    ],
+    "posts": [
