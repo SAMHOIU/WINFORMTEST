@@ -10,3 +10,6 @@
         "key": "article",
         "xpath": "//div[@class='t-pre']//li/a/@href"
       },
+      {
+        "type": "dom",
+        "key": "posts",
