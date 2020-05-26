@@ -8,3 +8,5 @@
       {
         "type": "url",
         "key": "article",
+        "xpath": "//div[@class='t-pre']//li/a/@href"
+      },
