@@ -6,3 +6,5 @@
   "rules": {
     "root": [
       {
+        "type": "url",
+        "key": "article",
