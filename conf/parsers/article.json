@@ -21,3 +21,4 @@
         "type": "text",
         "key": "text",
         "xpath": ".//td[contains(concat(' ', @class, ' '), ' a-content ')]"
+      },
