@@ -22,3 +22,5 @@
         "key": "text",
         "xpath": ".//td[contains(concat(' ', @class, ' '), ' a-content ')]"
       },
+      {
+        "type": "html",
