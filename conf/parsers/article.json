@@ -26,3 +26,5 @@
         "type": "html",
         "key": "meta",
         "xpath": ".//td[contains(concat(' ', @class, ' '), ' a-content ')]",
+        "re": [
+          "发信人:(?P<author>.+?)\\((?P<nick>.*?)\\).*?信区:(?P<board>.+?)<br/>",
