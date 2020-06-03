@@ -35,3 +35,5 @@
       },
       {
         "type": "text",
+        "key": "floor",
+        "xpath": ".//span[contains(@class, 'a-pos')]",
