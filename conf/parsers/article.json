@@ -38,3 +38,6 @@
         "key": "floor",
         "xpath": ".//span[contains(@class, 'a-pos')]",
         "re": ["(\\d+|楼主)"],
+        "js": "function process(s){if(s=='楼主') return '0'; return s;}"
+      }
+    ]
