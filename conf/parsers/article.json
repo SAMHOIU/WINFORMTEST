@@ -24,3 +24,5 @@
       },
       {
         "type": "html",
+        "key": "meta",
+        "xpath": ".//td[contains(concat(' ', @class, ' '), ' a-content ')]",
