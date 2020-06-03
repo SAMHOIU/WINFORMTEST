@@ -37,3 +37,4 @@
         "type": "text",
         "key": "floor",
         "xpath": ".//span[contains(@class, 'a-pos')]",
+        "re": ["(\\d+|楼主)"],
