@@ -41,3 +41,6 @@
         "js": "function process(s){if(s=='楼主') return '0'; return s;}"
       }
     ]
+  },
+  "js": ""
+}
