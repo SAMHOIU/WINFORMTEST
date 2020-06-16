@@ -12,3 +12,5 @@
       },
       {
         "type": "url",
+        "key": "board",
+        "xpath": "//div[@class='t-pre']//li[@class='page-select']/following-sibling::li[1]/a"
