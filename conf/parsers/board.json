@@ -4,3 +4,6 @@
   "example_url": "http://www.newsmth.net/nForum/board/Universal",
   "default_fields": true,
   "rules": {
+    "root": [
+      {
+        "type": "url",
