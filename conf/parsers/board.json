@@ -10,3 +10,5 @@
         "key": "article",
         "xpath": "//tr[not(contains(@class, 'top ad'))]/td[2]/a"
       },
+      {
+        "type": "url",
