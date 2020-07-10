@@ -6,3 +6,4 @@
   "rules": {
     "root": [
       {
+        "type": "url",
