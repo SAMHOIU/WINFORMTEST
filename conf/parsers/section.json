@@ -2,3 +2,5 @@
 {
   "name": "section",
   "example_url": "http://www.newsmth.net/nForum/section/1",
+  "default_fields": true,
+  "rules": {
