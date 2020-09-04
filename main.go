@@ -15,3 +15,6 @@ import (
 	"sync"
 	"syscall"
 	"time"
+
+	"crawler.club/crawler/version"
+	"crawler.club/dl"
