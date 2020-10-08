@@ -31,3 +31,4 @@ var (
 	timeout = flag.Int64("timeout", 300, "in seconds")
 	c       = flag.Int("c", 1, "worker count")
 	retry   = flag.Int("retry", 5, "retry cnt")
+	period  = flag.Int("period", -1, "period in seconds")
