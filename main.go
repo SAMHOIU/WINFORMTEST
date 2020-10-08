@@ -25,3 +25,6 @@ import (
 	"zliu.org/goutil"
 	"zliu.org/q"
 )
+
+var (
+	dir     = flag.String("dir", "data", "working dir")
