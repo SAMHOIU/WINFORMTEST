@@ -28,3 +28,5 @@ import (
 
 var (
 	dir     = flag.String("dir", "data", "working dir")
+	timeout = flag.Int64("timeout", 300, "in seconds")
+	c       = flag.Int("c", 1, "worker count")
