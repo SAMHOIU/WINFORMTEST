@@ -30,3 +30,4 @@ var (
 	dir     = flag.String("dir", "data", "working dir")
 	timeout = flag.Int64("timeout", 300, "in seconds")
 	c       = flag.Int("c", 1, "worker count")
+	retry   = flag.Int("retry", 5, "retry cnt")
