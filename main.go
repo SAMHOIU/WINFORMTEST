@@ -32,3 +32,5 @@ var (
 	c       = flag.Int("c", 1, "worker count")
 	retry   = flag.Int("retry", 5, "retry cnt")
 	period  = flag.Int("period", -1, "period in seconds")
+	fs      = flag.Bool("fs", true, "filestore flag")
+	api     = flag.Bool("api", false, "http api flag")
