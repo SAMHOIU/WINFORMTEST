@@ -37,3 +37,6 @@ var (
 	proxy   = flag.Bool("proxy", false, "use proxy or not")
 	ua      = flag.String("ua", "", "pc, mobile, google. Golang UA for empty")
 )
+
+var crawlQueue, storeQueue *q.Queue
+var urlStore, dedupStore *store.LevelStore
