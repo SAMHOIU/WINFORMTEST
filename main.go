@@ -34,3 +34,6 @@ var (
 	period  = flag.Int("period", -1, "period in seconds")
 	fs      = flag.Bool("fs", true, "filestore flag")
 	api     = flag.Bool("api", false, "http api flag")
+	proxy   = flag.Bool("proxy", false, "use proxy or not")
+	ua      = flag.String("ua", "", "pc, mobile, google. Golang UA for empty")
+)
