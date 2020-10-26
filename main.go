@@ -42,3 +42,6 @@ var crawlQueue, storeQueue *q.Queue
 var urlStore, dedupStore *store.LevelStore
 var fileStore *filestore.FileStore
 var once sync.Once
+
+func finish() {
+	if crawlQueue != nil {
