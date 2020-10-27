@@ -45,3 +45,4 @@ var once sync.Once
 
 func finish() {
 	if crawlQueue != nil {
+		crawlQueue.Close()
