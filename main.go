@@ -49,3 +49,4 @@ func finish() {
 	}
 	if storeQueue != nil {
 		storeQueue.Close()
+	}
