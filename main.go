@@ -53,3 +53,4 @@ func finish() {
 	if urlStore != nil {
 		urlStore.Close()
 	}
+	if dedupStore != nil {
