@@ -52,3 +52,4 @@ func finish() {
 	}
 	if urlStore != nil {
 		urlStore.Close()
+	}
