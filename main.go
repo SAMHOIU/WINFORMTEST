@@ -58,3 +58,4 @@ func finish() {
 	}
 	if fileStore != nil {
 		fileStore.Close()
+	}
