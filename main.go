@@ -56,3 +56,5 @@ func finish() {
 	if dedupStore != nil {
 		dedupStore.Close()
 	}
+	if fileStore != nil {
+		fileStore.Close()
