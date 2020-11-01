@@ -62,3 +62,4 @@ func finish() {
 }
 
 func initTopics() (err error) {
+	once.Do(func() {
