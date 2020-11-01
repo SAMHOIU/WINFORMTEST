@@ -60,3 +60,5 @@ func finish() {
 		fileStore.Close()
 	}
 }
+
+func initTopics() (err error) {
