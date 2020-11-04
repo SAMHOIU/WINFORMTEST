@@ -64,3 +64,5 @@ func finish() {
 func initTopics() (err error) {
 	once.Do(func() {
 		crawlDir := filepath.Join(*dir, "crawl")
+		if crawlQueue, err = q.NewQueueWithRetryLimit(crawlDir, *retry); err != nil {
+			glog.Error(err)
