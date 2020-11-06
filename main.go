@@ -67,3 +67,4 @@ func initTopics() (err error) {
 		if crawlQueue, err = q.NewQueueWithRetryLimit(crawlDir, *retry); err != nil {
 			glog.Error(err)
 			return
+		}
