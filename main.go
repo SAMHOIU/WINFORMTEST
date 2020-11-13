@@ -68,3 +68,4 @@ func initTopics() (err error) {
 			glog.Error(err)
 			return
 		}
+		storeDir := filepath.Join(*dir, "store")
