@@ -69,3 +69,5 @@ func initTopics() (err error) {
 			return
 		}
 		storeDir := filepath.Join(*dir, "store")
+		if storeQueue, err = q.NewQueue(storeDir); err != nil {
+			glog.Error(err)
