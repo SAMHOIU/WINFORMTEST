@@ -73,3 +73,4 @@ func initTopics() (err error) {
 			glog.Error(err)
 			return
 		}
+		dbDir := filepath.Join(*dir, "url")
