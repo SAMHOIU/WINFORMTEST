@@ -74,3 +74,4 @@ func initTopics() (err error) {
 			return
 		}
 		dbDir := filepath.Join(*dir, "url")
+		if urlStore, err = store.NewLevelStore(dbDir); err != nil {
