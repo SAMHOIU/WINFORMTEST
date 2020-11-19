@@ -78,3 +78,5 @@ func initTopics() (err error) {
 			glog.Error(err)
 			return
 		}
+		dedupDir := filepath.Join(*dir, "dedup")
+		if dedupStore, err = store.NewLevelStore(dedupDir); err != nil {
