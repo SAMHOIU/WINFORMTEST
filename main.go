@@ -77,3 +77,4 @@ func initTopics() (err error) {
 		if urlStore, err = store.NewLevelStore(dbDir); err != nil {
 			glog.Error(err)
 			return
+		}
