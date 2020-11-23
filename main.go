@@ -87,3 +87,5 @@ func initTopics() (err error) {
 			fsDir := filepath.Join(*dir, "fs")
 			if fileStore, err = filestore.NewFileStore(fsDir); err != nil {
 				glog.Error(err)
+				return
+			}
