@@ -89,3 +89,5 @@ func initTopics() (err error) {
 				glog.Error(err)
 				return
 			}
+		}
+		if goutil.FileGuard("first.lock") {
