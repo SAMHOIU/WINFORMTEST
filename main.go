@@ -94,3 +94,5 @@ func initTopics() (err error) {
 			if err = initSeeds(); err != nil {
 				return
 			}
+		}
+	})
