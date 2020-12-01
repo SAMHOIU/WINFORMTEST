@@ -97,3 +97,4 @@ func initTopics() (err error) {
 		}
 	})
 	return
+}
