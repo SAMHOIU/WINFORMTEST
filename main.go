@@ -98,3 +98,5 @@ func initTopics() (err error) {
 	})
 	return
 }
+
+func initSeeds() error {
