@@ -114,3 +114,6 @@ func initSeeds() error {
 	glog.Infof("initSeeds %d seeds", len(seeds))
 	tz := time.Now().Format("200601020304")
 	for _, seed := range seeds {
+		seed.TaskName = tz
+		b, _ := json.Marshal(seed)
+		if err = crawlQueue.Enqueue(string(b)); err != nil {
