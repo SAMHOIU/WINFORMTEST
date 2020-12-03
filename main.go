@@ -104,3 +104,5 @@ func initSeeds() error {
 	content, err := ioutil.ReadFile(seedsFile)
 	if err != nil {
 		glog.Error(err)
+		return err
+	}
