@@ -108,3 +108,9 @@ func initSeeds() error {
 	}
 	var seeds []*et.UrlTask
 	if err = json.Unmarshal(content, &seeds); err != nil {
+		glog.Error(err)
+		return err
+	}
+	glog.Infof("initSeeds %d seeds", len(seeds))
+	tz := time.Now().Format("200601020304")
+	for _, seed := range seeds {
