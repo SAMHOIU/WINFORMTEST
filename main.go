@@ -117,3 +117,7 @@ func initSeeds() error {
 		seed.TaskName = tz
 		b, _ := json.Marshal(seed)
 		if err = crawlQueue.Enqueue(string(b)); err != nil {
+			glog.Error(err)
+			return err
+		}
+	}
