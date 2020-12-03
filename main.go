@@ -121,3 +121,4 @@ func initSeeds() error {
 			return err
 		}
 	}
+	return nil
