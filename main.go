@@ -101,3 +101,4 @@ func initTopics() (err error) {
 
 func initSeeds() error {
 	seedsFile := filepath.Join(*conf, "seeds.json")
+	content, err := ioutil.ReadFile(seedsFile)
