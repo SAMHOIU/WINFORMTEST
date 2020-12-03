@@ -106,3 +106,4 @@ func initSeeds() error {
 		glog.Error(err)
 		return err
 	}
+	var seeds []*et.UrlTask
