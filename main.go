@@ -107,3 +107,4 @@ func initSeeds() error {
 		return err
 	}
 	var seeds []*et.UrlTask
+	if err = json.Unmarshal(content, &seeds); err != nil {
