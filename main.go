@@ -123,3 +123,7 @@ func initSeeds() error {
 	}
 	return nil
 }
+
+func stop(sigs chan os.Signal, exit chan bool) {
+	<-sigs
+	glog.Info("receive stop signal!")
