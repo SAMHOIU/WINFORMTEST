@@ -128,3 +128,4 @@ func stop(sigs chan os.Signal, exit chan bool) {
 	<-sigs
 	glog.Info("receive stop signal!")
 	close(exit)
+}
