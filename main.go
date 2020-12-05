@@ -129,3 +129,6 @@ func stop(sigs chan os.Signal, exit chan bool) {
 	glog.Info("receive stop signal!")
 	close(exit)
 }
+
+func work(i int, exit chan bool) {
+	glog.Infof("start worker %d", i)
