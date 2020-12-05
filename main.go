@@ -134,3 +134,4 @@ func work(i int, exit chan bool) {
 	glog.Infof("start worker %d", i)
 	for {
 		select {
+		case <-exit:
