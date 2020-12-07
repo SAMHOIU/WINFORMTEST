@@ -135,3 +135,4 @@ func work(i int, exit chan bool) {
 	for {
 		select {
 		case <-exit:
+			glog.Infof("worker %d exit", i)
