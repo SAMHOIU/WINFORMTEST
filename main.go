@@ -136,3 +136,6 @@ func work(i int, exit chan bool) {
 		select {
 		case <-exit:
 			glog.Infof("worker %d exit", i)
+			return
+		default:
+			key, item, err := crawlQueue.Dequeue(*timeout)
