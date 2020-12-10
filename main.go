@@ -139,3 +139,4 @@ func work(i int, exit chan bool) {
 			return
 		default:
 			key, item, err := crawlQueue.Dequeue(*timeout)
+			if err != nil {
