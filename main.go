@@ -141,3 +141,5 @@ func work(i int, exit chan bool) {
 			key, item, err := crawlQueue.Dequeue(*timeout)
 			if err != nil {
 				if err.Error() == "Queue is empty" {
+					s := rand.Int()%20 + 5
+					glog.Infof("queue is empty, worker %d sleep %d seconds", i, s)
