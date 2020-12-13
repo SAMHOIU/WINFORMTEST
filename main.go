@@ -140,3 +140,4 @@ func work(i int, exit chan bool) {
 		default:
 			key, item, err := crawlQueue.Dequeue(*timeout)
 			if err != nil {
+				if err.Error() == "Queue is empty" {
