@@ -143,3 +143,5 @@ func work(i int, exit chan bool) {
 				if err.Error() == "Queue is empty" {
 					s := rand.Int()%20 + 5
 					glog.Infof("queue is empty, worker %d sleep %d seconds", i, s)
+					goutil.Sleep(time.Duration(s)*time.Second, exit)
+				} else {
