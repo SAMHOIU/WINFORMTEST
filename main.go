@@ -147,3 +147,4 @@ func work(i int, exit chan bool) {
 				} else {
 					glog.Error(err)
 				}
+				continue
