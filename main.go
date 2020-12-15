@@ -145,3 +145,5 @@ func work(i int, exit chan bool) {
 					glog.Infof("queue is empty, worker %d sleep %d seconds", i, s)
 					goutil.Sleep(time.Duration(s)*time.Second, exit)
 				} else {
+					glog.Error(err)
+				}
