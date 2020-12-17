@@ -148,3 +148,5 @@ func work(i int, exit chan bool) {
 					glog.Error(err)
 				}
 				continue
+			}
+			task := new(et.UrlTask)
