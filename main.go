@@ -150,3 +150,4 @@ func work(i int, exit chan bool) {
 				continue
 			}
 			task := new(et.UrlTask)
+			if err = json.Unmarshal([]byte(item), task); err != nil {
