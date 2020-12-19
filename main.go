@@ -151,3 +151,5 @@ func work(i int, exit chan bool) {
 			}
 			task := new(et.UrlTask)
 			if err = json.Unmarshal([]byte(item), task); err != nil {
+				glog.Error(err)
+				continue
