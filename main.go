@@ -154,3 +154,6 @@ func work(i int, exit chan bool) {
 				glog.Error(err)
 				continue
 			}
+
+			var t time.Time
+			bt, err := urlStore.Get(task.Url)
