@@ -160,3 +160,5 @@ func work(i int, exit chan bool) {
 			if err == nil || err.Error() == "leveldb: not found" {
 				t, _ = time.Parse(time.RFC3339, string(bt))
 			}
+
+			var req = &dl.HttpRequest{Url: task.Url}
