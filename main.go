@@ -157,3 +157,5 @@ func work(i int, exit chan bool) {
 
 			var t time.Time
 			bt, err := urlStore.Get(task.Url)
+			if err == nil || err.Error() == "leveldb: not found" {
+				t, _ = time.Parse(time.RFC3339, string(bt))
