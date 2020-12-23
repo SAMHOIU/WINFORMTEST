@@ -162,3 +162,6 @@ func work(i int, exit chan bool) {
 			}
 
 			var req = &dl.HttpRequest{Url: task.Url}
+			if *ua == "pc" || *ua == "mobile" || *ua == "google" {
+				req.Platform = *ua
+			}
