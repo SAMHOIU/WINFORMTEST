@@ -166,3 +166,5 @@ func work(i int, exit chan bool) {
 				req.Platform = *ua
 			}
 			if *proxy {
+				req.UseProxy = true
+			}
