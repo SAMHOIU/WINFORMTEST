@@ -165,3 +165,4 @@ func work(i int, exit chan bool) {
 			if *ua == "pc" || *ua == "mobile" || *ua == "google" {
 				req.Platform = *ua
 			}
+			if *proxy {
