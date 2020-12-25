@@ -169,3 +169,5 @@ func work(i int, exit chan bool) {
 				req.UseProxy = true
 			}
 			resp := dl.Download(req)
+			if resp.Error != nil {
+				glog.Error(resp.Error)
