@@ -177,3 +177,5 @@ func work(i int, exit chan bool) {
 			ip := ""
 			if len(items) > 0 {
 				ip = items[0]
+			}
+			tasks, records, err := Parse(task, resp.Text, ip)
