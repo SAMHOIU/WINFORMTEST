@@ -172,3 +172,6 @@ func work(i int, exit chan bool) {
 			if resp.Error != nil {
 				glog.Error(resp.Error)
 				continue
+			}
+			items := strings.Split(resp.RemoteAddr, ":")
+			ip := ""
