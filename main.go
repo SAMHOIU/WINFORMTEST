@@ -175,3 +175,5 @@ func work(i int, exit chan bool) {
 			}
 			items := strings.Split(resp.RemoteAddr, ":")
 			ip := ""
+			if len(items) > 0 {
+				ip = items[0]
