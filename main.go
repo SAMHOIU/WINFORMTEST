@@ -171,3 +171,4 @@ func work(i int, exit chan bool) {
 			resp := dl.Download(req)
 			if resp.Error != nil {
 				glog.Error(resp.Error)
+				continue
