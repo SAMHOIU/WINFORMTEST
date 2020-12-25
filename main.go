@@ -168,3 +168,4 @@ func work(i int, exit chan bool) {
 			if *proxy {
 				req.UseProxy = true
 			}
+			resp := dl.Download(req)
