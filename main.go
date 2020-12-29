@@ -183,3 +183,6 @@ func work(i int, exit chan bool) {
 				glog.Error(err)
 				continue
 			}
+
+			t2 := time.Now()
+			for _, rec := range records {
