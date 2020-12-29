@@ -186,3 +186,5 @@ func work(i int, exit chan bool) {
 
 			t2 := time.Now()
 			for _, rec := range records {
+				b, _ := json.Marshal(rec)
+				if *fs {
