@@ -188,3 +188,4 @@ func work(i int, exit chan bool) {
 			for _, rec := range records {
 				b, _ := json.Marshal(rec)
 				if *fs {
+					fileStore.WriteLine(b)
