@@ -189,3 +189,7 @@ func work(i int, exit chan bool) {
 				b, _ := json.Marshal(rec)
 				if *fs {
 					fileStore.WriteLine(b)
+				}
+				if err = storeQueue.Enqueue(string(b)); err != nil {
+					glog.Error(err)
+				}
