@@ -201,3 +201,7 @@ func work(i int, exit chan bool) {
 					}
 				}
 			}
+
+			if t2.After(t) {
+				for _, t := range tasks {
+					if task.TaskName != "" {
