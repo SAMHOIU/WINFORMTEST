@@ -198,3 +198,4 @@ func work(i int, exit chan bool) {
 					switch rec["time_"].(type) {
 					case string:
 						t2, _ = time.Parse(time.RFC3339, rec["time_"].(string))
+					}
