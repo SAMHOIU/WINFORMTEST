@@ -193,3 +193,6 @@ func work(i int, exit chan bool) {
 				if err = storeQueue.Enqueue(string(b)); err != nil {
 					glog.Error(err)
 				}
+
+				if rec["time_"] != nil {
+					switch rec["time_"].(type) {
