@@ -199,3 +199,4 @@ func work(i int, exit chan bool) {
 					case string:
 						t2, _ = time.Parse(time.RFC3339, rec["time_"].(string))
 					}
+				}
