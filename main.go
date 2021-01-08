@@ -214,3 +214,6 @@ func work(i int, exit chan bool) {
 						glog.Error(err)
 					}
 					dedupStore.Put(k, nil)
+					b, _ := json.Marshal(t)
+					if err = crawlQueue.Enqueue(string(b)); err != nil {
+						glog.Error(err)
