@@ -206,3 +206,4 @@ func work(i int, exit chan bool) {
 				for _, t := range tasks {
 					if task.TaskName != "" {
 						t.TaskName = task.TaskName
+					}
