@@ -209,3 +209,5 @@ func work(i int, exit chan bool) {
 					}
 					k := taskKey(t)
 					if has, err := dedupStore.Has(k); has {
+						continue
+					} else if err != nil {
