@@ -207,3 +207,5 @@ func work(i int, exit chan bool) {
 					if task.TaskName != "" {
 						t.TaskName = task.TaskName
 					}
+					k := taskKey(t)
+					if has, err := dedupStore.Has(k); has {
