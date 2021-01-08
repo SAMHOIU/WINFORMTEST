@@ -211,3 +211,4 @@ func work(i int, exit chan bool) {
 					if has, err := dedupStore.Has(k); has {
 						continue
 					} else if err != nil {
+						glog.Error(err)
