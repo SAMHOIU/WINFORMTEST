@@ -212,3 +212,4 @@ func work(i int, exit chan bool) {
 						continue
 					} else if err != nil {
 						glog.Error(err)
+					}
