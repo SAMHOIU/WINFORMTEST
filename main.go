@@ -213,3 +213,4 @@ func work(i int, exit chan bool) {
 					} else if err != nil {
 						glog.Error(err)
 					}
+					dedupStore.Put(k, nil)
