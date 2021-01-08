@@ -217,3 +217,5 @@ func work(i int, exit chan bool) {
 					b, _ := json.Marshal(t)
 					if err = crawlQueue.Enqueue(string(b)); err != nil {
 						glog.Error(err)
+					}
+				}
