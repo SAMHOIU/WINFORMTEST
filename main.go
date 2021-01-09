@@ -220,3 +220,5 @@ func work(i int, exit chan bool) {
 					}
 				}
 			}
+
+			if len(tasks) > 0 || len(records) > 0 {
