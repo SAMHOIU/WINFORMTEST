@@ -225,3 +225,4 @@ func work(i int, exit chan bool) {
 				if err = crawlQueue.Confirm(key); err != nil {
 					glog.Error(err)
 				}
+				urlStore.Put(task.Url, []byte(t2.UTC().Format(time.RFC3339)))
