@@ -226,3 +226,4 @@ func work(i int, exit chan bool) {
 					glog.Error(err)
 				}
 				urlStore.Put(task.Url, []byte(t2.UTC().Format(time.RFC3339)))
+			}
