@@ -229,3 +229,4 @@ func work(i int, exit chan bool) {
 			}
 		}
 	}
+}
