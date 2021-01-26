@@ -230,3 +230,5 @@ func work(i int, exit chan bool) {
 		}
 	}
 }
+
+func checkSeeds(exit chan bool) {
