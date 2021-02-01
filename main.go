@@ -235,3 +235,4 @@ func checkSeeds(exit chan bool) {
 	defer glog.Info("checkSeeds exit")
 	for {
 		select {
+		case <-exit:
