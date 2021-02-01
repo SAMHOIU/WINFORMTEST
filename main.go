@@ -236,3 +236,6 @@ func checkSeeds(exit chan bool) {
 	for {
 		select {
 		case <-exit:
+			return
+		default:
+			goutil.Sleep(time.Duration(*period)*time.Second, exit)
