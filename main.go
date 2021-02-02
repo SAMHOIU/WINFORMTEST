@@ -240,3 +240,4 @@ func checkSeeds(exit chan bool) {
 		default:
 			goutil.Sleep(time.Duration(*period)*time.Second, exit)
 			glog.Info("check seeds period")
+			initSeeds()
