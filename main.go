@@ -243,3 +243,4 @@ func checkSeeds(exit chan bool) {
 			initSeeds()
 		}
 	}
+}
