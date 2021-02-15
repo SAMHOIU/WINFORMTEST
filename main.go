@@ -248,3 +248,5 @@ func checkSeeds(exit chan bool) {
 func main() {
 	flag.Parse()
 	defer glog.Flush()
+
+	fmt.Printf("Git SHA: %s\n", version.GitSHA)
