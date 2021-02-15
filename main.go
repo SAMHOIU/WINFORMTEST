@@ -244,3 +244,7 @@ func checkSeeds(exit chan bool) {
 		}
 	}
 }
+
+func main() {
+	flag.Parse()
+	defer glog.Flush()
