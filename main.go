@@ -259,3 +259,5 @@ func main() {
 		return
 	}
 	defer finish()
+
+	exit := make(chan bool)
