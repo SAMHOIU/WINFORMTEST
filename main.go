@@ -256,3 +256,5 @@ func main() {
 	defer glog.Info("exit!")
 
 	if err := initTopics(); err != nil {
+		return
+	}
