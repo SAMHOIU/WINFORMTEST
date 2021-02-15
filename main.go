@@ -261,3 +261,5 @@ func main() {
 	defer finish()
 
 	exit := make(chan bool)
+	sigs := make(chan os.Signal)
+	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
