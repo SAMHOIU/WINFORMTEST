@@ -258,3 +258,4 @@ func main() {
 	if err := initTopics(); err != nil {
 		return
 	}
+	defer finish()
