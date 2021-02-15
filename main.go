@@ -252,3 +252,7 @@ func main() {
 	fmt.Printf("Git SHA: %s\n", version.GitSHA)
 	fmt.Printf("Go Version: %s\n", runtime.Version())
 	fmt.Printf("Go OS/Arch: %s/%s\n", runtime.GOOS, runtime.GOARCH)
+
+	defer glog.Info("exit!")
+
+	if err := initTopics(); err != nil {
