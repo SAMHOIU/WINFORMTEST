@@ -263,3 +263,4 @@ func main() {
 	exit := make(chan bool)
 	sigs := make(chan os.Signal)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
+	go stop(sigs, exit)
