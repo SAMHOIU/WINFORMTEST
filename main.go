@@ -264,3 +264,6 @@ func main() {
 	sigs := make(chan os.Signal)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
 	go stop(sigs, exit)
+
+	if *period > 0 && *c > 0 {
+		go checkSeeds(exit)
