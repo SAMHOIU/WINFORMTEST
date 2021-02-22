@@ -267,3 +267,6 @@ func main() {
 
 	if *period > 0 && *c > 0 {
 		go checkSeeds(exit)
+	}
+	for i := 0; i < *c; i++ {
+		go work(i, exit)
