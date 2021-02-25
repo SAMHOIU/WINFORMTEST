@@ -270,3 +270,6 @@ func main() {
 	}
 	for i := 0; i < *c; i++ {
 		go work(i, exit)
+	}
+
+	if *api {
