@@ -273,3 +273,5 @@ func main() {
 	}
 
 	if *api {
+		go web()
+	}
