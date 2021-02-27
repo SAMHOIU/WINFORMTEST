@@ -275,3 +275,6 @@ func main() {
 	if *api {
 		go web()
 	}
+
+	// wait exit signal
+	select {
