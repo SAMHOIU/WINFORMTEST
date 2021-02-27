@@ -278,3 +278,7 @@ func main() {
 
 	// wait exit signal
 	select {
+	case <-exit:
+		return
+	}
+}
