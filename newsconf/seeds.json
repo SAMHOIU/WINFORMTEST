@@ -3,3 +3,6 @@
  {
     "parser_name": "link_",
     "url": "https://tech.sina.com.cn/",
+    "ext": {
+      "category": "Tech"
+    }
