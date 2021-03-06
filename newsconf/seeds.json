@@ -17,3 +17,6 @@
   {
     "parser_name": "link_",
     "url": "https://it.sohu.com/",
+    "ext": {
+      "category": "Tech"
+    }
