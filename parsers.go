@@ -14,3 +14,7 @@ import (
 	"crawler.club/crawler/rss"
 	"crawler.club/et"
 )
+
+var (
+	conf = flag.String("conf", "./conf", "dir for parsers conf")
+)
