@@ -18,3 +18,6 @@ import (
 var (
 	conf = flag.String("conf", "./conf", "dir for parsers conf")
 )
+
+type Parsers struct {
+	sync.Mutex
