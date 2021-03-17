@@ -21,3 +21,5 @@ var (
 
 type Parsers struct {
 	sync.Mutex
+	items map[string]*et.Parser
+}
