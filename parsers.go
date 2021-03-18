@@ -26,3 +26,4 @@ type Parsers struct {
 
 func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	p.Lock()
+	defer p.Unlock()
