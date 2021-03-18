@@ -23,3 +23,6 @@ type Parsers struct {
 	sync.Mutex
 	items map[string]*et.Parser
 }
+
+func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
+	p.Lock()
