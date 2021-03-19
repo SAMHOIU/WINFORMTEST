@@ -27,3 +27,6 @@ type Parsers struct {
 func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	p.Lock()
 	defer p.Unlock()
+	if !refresh && p.items[name] != nil {
+		return p.items[name], nil
+	}
