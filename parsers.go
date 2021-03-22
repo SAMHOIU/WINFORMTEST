@@ -39,3 +39,5 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	if err := json.Unmarshal(content, parser); err != nil {
 		return nil, err
 	}
+	p.items[name] = parser
+	return parser, nil
