@@ -37,3 +37,5 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	}
 	parser := new(et.Parser)
 	if err := json.Unmarshal(content, parser); err != nil {
+		return nil, err
+	}
