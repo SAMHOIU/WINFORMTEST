@@ -41,3 +41,4 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	}
 	p.items[name] = parser
 	return parser, nil
+}
