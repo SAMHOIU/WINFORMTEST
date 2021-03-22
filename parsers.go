@@ -30,3 +30,6 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	if !refresh && p.items[name] != nil {
 		return p.items[name], nil
 	}
+	file := filepath.Join(*conf, "parsers", name+".json")
+	content, err := ioutil.ReadFile(file)
+	if err != nil {
