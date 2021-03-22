@@ -33,3 +33,5 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 	file := filepath.Join(*conf, "parsers", name+".json")
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
+		return nil, err
+	}
