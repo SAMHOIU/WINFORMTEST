@@ -50,3 +50,4 @@ func Parse(task *et.UrlTask, page, ip string) (
 	name := task.ParserName
 	url := task.Url
 	switch strings.ToLower(name) {
+	case "rss_":
