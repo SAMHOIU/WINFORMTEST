@@ -44,3 +44,7 @@ func (p *Parsers) GetParser(name string, refresh bool) (*et.Parser, error) {
 }
 
 var pool = &Parsers{items: make(map[string]*et.Parser)}
+
+func Parse(task *et.UrlTask, page, ip string) (
+	[]*et.UrlTask, []map[string]interface{}, error) {
+	name := task.ParserName
