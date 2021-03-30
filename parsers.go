@@ -48,3 +48,5 @@ var pool = &Parsers{items: make(map[string]*et.Parser)}
 func Parse(task *et.UrlTask, page, ip string) (
 	[]*et.UrlTask, []map[string]interface{}, error) {
 	name := task.ParserName
+	url := task.Url
+	switch strings.ToLower(name) {
