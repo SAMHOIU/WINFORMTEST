@@ -53,3 +53,4 @@ func Parse(task *et.UrlTask, page, ip string) (
 	case "rss_":
 		feeds, err := rss.Parse(url, page, task.Ext)
 		return nil, feeds, err
+	case "content_":
