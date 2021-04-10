@@ -54,3 +54,5 @@ func Parse(task *et.UrlTask, page, ip string) (
 		feeds, err := rss.Parse(url, page, task.Ext)
 		return nil, feeds, err
 	case "content_":
+		doc := ce.ParsePro(url, page, ip, false)
+		return nil, []map[string]interface{}{map[string]interface{}{"doc": doc, "t": time.Now(), "ext": task.Ext}}, nil
