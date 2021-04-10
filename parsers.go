@@ -56,3 +56,5 @@ func Parse(task *et.UrlTask, page, ip string) (
 	case "content_":
 		doc := ce.ParsePro(url, page, ip, false)
 		return nil, []map[string]interface{}{map[string]interface{}{"doc": doc, "t": time.Now(), "ext": task.Ext}}, nil
+	case "link_":
+		links, err := et.ParseNewLinks(page, url)
