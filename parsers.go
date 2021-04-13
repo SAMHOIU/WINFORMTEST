@@ -66,3 +66,7 @@ func Parse(task *et.UrlTask, page, ip string) (
 			tasks = append(tasks, &et.UrlTask{ParserName: "content_", Url: link, Ext: task.Ext})
 		}
 		return tasks, nil, nil
+	default:
+		p, err := pool.GetParser(name, false)
+		if err != nil {
+			return nil, nil, err
