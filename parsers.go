@@ -60,3 +60,6 @@ func Parse(task *et.UrlTask, page, ip string) (
 		links, err := et.ParseNewLinks(page, url)
 		if err != nil {
 			return nil, nil, err
+		}
+		var tasks []*et.UrlTask
+		for _, link := range links {
