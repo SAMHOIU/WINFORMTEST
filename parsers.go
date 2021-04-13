@@ -70,3 +70,5 @@ func Parse(task *et.UrlTask, page, ip string) (
 		p, err := pool.GetParser(name, false)
 		if err != nil {
 			return nil, nil, err
+		}
+		return p.Parse(page, url)
