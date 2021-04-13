@@ -63,3 +63,6 @@ func Parse(task *et.UrlTask, page, ip string) (
 		}
 		var tasks []*et.UrlTask
 		for _, link := range links {
+			tasks = append(tasks, &et.UrlTask{ParserName: "content_", Url: link, Ext: task.Ext})
+		}
+		return tasks, nil, nil
