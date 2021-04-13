@@ -72,3 +72,5 @@ func Parse(task *et.UrlTask, page, ip string) (
 			return nil, nil, err
 		}
 		return p.Parse(page, url)
+	}
+}
