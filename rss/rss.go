@@ -10,3 +10,6 @@ import (
 	"github.com/liuzl/store"
 	"github.com/xgolib/gofeed"
 )
+
+var linkStore *store.LevelStore
+var once sync.Once
