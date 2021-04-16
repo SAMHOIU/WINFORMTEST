@@ -16,3 +16,4 @@ var once sync.Once
 
 func getLinkStore() *store.LevelStore {
 	once.Do(func() {
+		dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
