@@ -6,3 +6,7 @@ import (
 	"path/filepath"
 	"sync"
 	"time"
+
+	"github.com/liuzl/store"
+	"github.com/xgolib/gofeed"
+)
