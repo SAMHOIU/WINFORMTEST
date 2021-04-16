@@ -13,3 +13,6 @@ import (
 
 var linkStore *store.LevelStore
 var once sync.Once
+
+func getLinkStore() *store.LevelStore {
+	once.Do(func() {
