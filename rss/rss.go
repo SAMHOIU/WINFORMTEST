@@ -22,3 +22,5 @@ func getLinkStore() *store.LevelStore {
 		}
 		linkStore, err = store.NewLevelStore(filepath.Join(dir, ".rsslinks"))
 		if err != nil {
+			panic(err)
+		}
