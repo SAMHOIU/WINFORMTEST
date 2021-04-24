@@ -25,3 +25,4 @@ func getLinkStore() *store.LevelStore {
 			panic(err)
 		}
 	})
+	return linkStore
