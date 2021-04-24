@@ -26,3 +26,6 @@ func getLinkStore() *store.LevelStore {
 		}
 	})
 	return linkStore
+}
+
+func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) {
