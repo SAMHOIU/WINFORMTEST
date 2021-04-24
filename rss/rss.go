@@ -29,3 +29,5 @@ func getLinkStore() *store.LevelStore {
 }
 
 func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) {
+	fp := gofeed.NewParser()
+	feed, err := fp.ParseString(page)
