@@ -33,3 +33,5 @@ func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) 
 	feed, err := fp.ParseString(page)
 	if err != nil {
 		return nil, err
+	}
+	var ret []map[string]interface{}
