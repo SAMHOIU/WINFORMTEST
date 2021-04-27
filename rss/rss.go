@@ -35,3 +35,6 @@ func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) 
 		return nil, err
 	}
 	var ret []map[string]interface{}
+	for _, item := range feed.Items {
+		has, err := getLinkStore().Has(item.Link)
+		if err != nil {
