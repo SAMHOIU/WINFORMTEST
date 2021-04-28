@@ -48,3 +48,4 @@ func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) 
 		ret = append(ret, map[string]interface{}{"feed": item, "ext": ext})
 	}
 	return ret, nil
+}
