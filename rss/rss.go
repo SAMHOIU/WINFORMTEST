@@ -41,3 +41,6 @@ func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) 
 			return nil, err
 		}
 		if has {
+			continue
+		}
+		//glog.Info("add ", item.Link)
