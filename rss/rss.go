@@ -44,3 +44,5 @@ func Parse(url, page string, ext interface{}) ([]map[string]interface{}, error) 
 			continue
 		}
 		//glog.Info("add ", item.Link)
+		getLinkStore().Put(item.Link, []byte(time.Now().UTC().Format(time.RFC3339)))
+		ret = append(ret, map[string]interface{}{"feed": item, "ext": ext})
