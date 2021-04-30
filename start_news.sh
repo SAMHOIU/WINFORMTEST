@@ -1,1 +1,1 @@
-go bui
+go build
