@@ -1,2 +1,2 @@
 go build
-./crawle
+./crawler 
