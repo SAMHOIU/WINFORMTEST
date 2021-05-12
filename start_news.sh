@@ -1,2 +1,2 @@
 go build
-./crawler -l
+./crawler -logt
