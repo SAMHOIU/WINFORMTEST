@@ -1,2 +1,2 @@
 go build
-./crawler -logtostderr -api -p
+./crawler -logtostderr -api -per
