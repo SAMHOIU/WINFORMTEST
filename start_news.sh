@@ -1,2 +1,2 @@
 go build
-./crawler -logtostderr -api -period 30 -conf ./newsco
+./crawler -logtostderr -api -period 30 -conf ./newscon
