@@ -7,4 +7,4 @@
 ### 通过go来安装`crawler.club/crawler`。
 
 ```sh
-go install crawler.club/c
+go install crawler.club/cra
