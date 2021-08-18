@@ -8,3 +8,4 @@
 
 ```sh
 go install crawler.club/crawler
+c
