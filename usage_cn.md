@@ -11,4 +11,4 @@ go install crawler.club/crawler
 crawler --help
 ```
 
-### 主要参
+### 主要参数
