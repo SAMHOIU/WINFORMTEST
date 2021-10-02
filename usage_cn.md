@@ -12,4 +12,4 @@ crawler --help
 ```
 
 ### 主要参数说明
-* `-api` 打开通过http取数据的
+* `-api` 打开通过http取数据的接口
