@@ -13,4 +13,4 @@ crawler --help
 
 ### 主要参数说明
 * `-api` 打开通过http取数据的接口
-* `-addr` http服务地址，查看爬虫状态、取
+* `-addr` http服务地址，查看爬虫状态、取数
