@@ -22,4 +22,4 @@ crawler --help
 ### 主要HTTP接口
 * 查看队列头数据（不从队列删除）
     ```
-    GET http://localhost:2001/api/data?peek=tr
+    GET http://localhost:2001/api/data?peek=tru
