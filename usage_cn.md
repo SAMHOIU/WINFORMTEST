@@ -24,4 +24,4 @@ crawler --help
     ```
     GET http://localhost:2001/api/data?peek=true
     ```
-* 取走队
+* 取走队列
