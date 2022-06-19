@@ -28,4 +28,5 @@ crawler --help
     ```
     GET http://localhost:2001/api/data
     ```
-* 查看爬虫状
+* 查看爬虫状态
+ 
