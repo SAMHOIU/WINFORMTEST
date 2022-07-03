@@ -30,4 +30,4 @@ crawler --help
     ```
 * 查看爬虫状态
     ```
-    GET http://
+    GET http://l
