@@ -30,4 +30,4 @@ crawler --help
     ```
 * 查看爬虫状态
     ```
-    GET http://localhost:2001/a
+    GET http://localhost:2001/api
