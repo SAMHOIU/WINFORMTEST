@@ -33,4 +33,4 @@ crawler --help
     GET http://localhost:2001/api/status
     ```
 ### 其他说明
-程序运营后在启动目录下会生成两个隐藏目录`
+程序运营后在启动目录下会生成两个隐藏目录`.r
