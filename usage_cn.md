@@ -33,4 +33,4 @@ crawler --help
     GET http://localhost:2001/api/status
     ```
 ### 其他说明
-程序运营后在启动目录下会生成两个隐藏目录`.rsslinks`和`.etlinks`。这两个目录分别用作`rss`类型和`web`类型抓取的链接
+程序运营后在启动目录下会生成两个隐藏目录`.rsslinks`和`.etlinks`。这两个目录分别用作`rss`类型和`web`类型抓取的链接去重
