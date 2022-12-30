@@ -7,3 +7,6 @@ import (
 	"crawler.club/et"
 	"zliu.org/goutil"
 )
+
+func taskKey(t *et.UrlTask) string {
+	if t == nil {
