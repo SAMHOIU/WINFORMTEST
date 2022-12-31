@@ -14,3 +14,4 @@ func taskKey(t *et.UrlTask) string {
 	}
 	return fmt.Sprintf("%s\t%s\t%s",
 		goutil.ReverseOrderEncode(t.TaskName), t.Url, t.ParserName)
+}
