@@ -10,3 +10,5 @@ import (
 
 func taskKey(t *et.UrlTask) string {
 	if t == nil {
+		return ""
+	}
