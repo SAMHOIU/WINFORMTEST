@@ -10,3 +10,6 @@ import (
 	"time"
 
 	"crawler.club/et"
+	"github.com/golang/glog"
+	"zliu.org/goutil/rest"
+)
