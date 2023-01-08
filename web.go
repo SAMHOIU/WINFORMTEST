@@ -13,3 +13,5 @@ import (
 	"github.com/golang/glog"
 	"zliu.org/goutil/rest"
 )
+
+var (
