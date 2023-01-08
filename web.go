@@ -15,3 +15,5 @@ import (
 )
 
 var (
+	addr = flag.String("addr", ":2001", "rest address")
+)
