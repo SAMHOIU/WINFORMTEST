@@ -22,3 +22,5 @@ func StatusHandler(w http.ResponseWriter, r *http.Request) {
 	glog.Infof("addr=%s  method=%s host=%s uri=%s",
 		r.RemoteAddr, r.Method, r.Host, r.RequestURI)
 	ret := map[string]interface{}{
+		"crawl": crawlQueue.Status(),
+		"store": storeQueue.Status(),
