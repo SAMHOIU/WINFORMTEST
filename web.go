@@ -24,3 +24,4 @@ func StatusHandler(w http.ResponseWriter, r *http.Request) {
 	ret := map[string]interface{}{
 		"crawl": crawlQueue.Status(),
 		"store": storeQueue.Status(),
+	}
