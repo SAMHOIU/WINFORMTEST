@@ -25,3 +25,5 @@ func StatusHandler(w http.ResponseWriter, r *http.Request) {
 		"crawl": crawlQueue.Status(),
 		"store": storeQueue.Status(),
 	}
+	rest.MustEncode(w, rest.RestMessage{"OK", ret})
+}
