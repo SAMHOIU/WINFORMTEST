@@ -29,3 +29,5 @@ func StatusHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
+	glog.Infof("addr=%s  method=%s host=%s uri=%s",
+		r.RemoteAddr, r.Method, r.Host, r.RequestURI)
