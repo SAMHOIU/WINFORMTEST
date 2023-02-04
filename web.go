@@ -32,3 +32,4 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 	glog.Infof("addr=%s  method=%s host=%s uri=%s",
 		r.RemoteAddr, r.Method, r.Host, r.RequestURI)
 	r.ParseForm()
+	b, err := ioutil.ReadAll(r.Body)
