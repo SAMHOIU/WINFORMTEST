@@ -33,3 +33,6 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 		r.RemoteAddr, r.Method, r.Host, r.RequestURI)
 	r.ParseForm()
 	b, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
+		return
