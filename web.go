@@ -44,3 +44,4 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	task.TaskName = time.Now().Format("200601020304")
 	k := taskKey(task)
+	if has, err := dedupStore.Has(k); has {
