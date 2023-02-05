@@ -38,3 +38,5 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var task = new(et.UrlTask)
+	if err = json.Unmarshal(b, task); err != nil {
+		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
