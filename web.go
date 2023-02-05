@@ -40,3 +40,7 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 	var task = new(et.UrlTask)
 	if err = json.Unmarshal(b, task); err != nil {
 		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
+		return
+	}
+	task.TaskName = time.Now().Format("200601020304")
+	k := taskKey(task)
