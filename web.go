@@ -57,3 +57,5 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
 		return
 	}
+	rest.MustEncode(w, rest.RestMessage{"OK", k})
+}
