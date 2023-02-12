@@ -47,3 +47,6 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 	if has, err := dedupStore.Has(k); has {
 		rest.MustEncode(w, rest.RestMessage{"DUP", k})
 		return
+	} else if err != nil {
+		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
+		return
