@@ -59,3 +59,6 @@ func AddTaskHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	rest.MustEncode(w, rest.RestMessage{"OK", k})
 }
+
+func DataHandler(w http.ResponseWriter, r *http.Request) {
+	glog.Infof("addr=%s  method=%s host=%s uri=%s",
