@@ -66,3 +66,6 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	peek := strings.ToLower(strings.TrimSpace(r.FormValue("peek")))
 	var ret string
+	var err error
+	if peek == "true" {
+		ret, err = storeQueue.Peek()
