@@ -71,3 +71,4 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 		ret, err = storeQueue.Peek()
 	} else {
 		_, ret, err = storeQueue.Dequeue(-1)
+	}
