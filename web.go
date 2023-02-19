@@ -75,3 +75,4 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
 		return
+	}
