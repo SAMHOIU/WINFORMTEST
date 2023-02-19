@@ -73,3 +73,5 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 		_, ret, err = storeQueue.Dequeue(-1)
 	}
 	if err != nil {
+		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
+		return
