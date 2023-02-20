@@ -76,3 +76,5 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 		rest.MustEncode(w, rest.RestMessage{"ERROR", err.Error()})
 		return
 	}
+	w.Write([]byte(ret))
+}
