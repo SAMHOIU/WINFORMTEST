@@ -78,3 +78,6 @@ func DataHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	w.Write([]byte(ret))
 }
+
+func web() {
+	if crawlQueue == nil || dedupStore == nil {
