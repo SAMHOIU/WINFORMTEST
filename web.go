@@ -83,3 +83,4 @@ func web() {
 	if crawlQueue == nil || dedupStore == nil {
 		glog.Error("topics did not init, can't start web server")
 		return
+	}
