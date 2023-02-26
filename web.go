@@ -86,3 +86,4 @@ func web() {
 	}
 	http.Handle("/api/addtask", rest.WithLog(AddTaskHandler))
 	http.Handle("/api/status", rest.WithLog(StatusHandler))
+	http.Handle("/api/data", rest.WithLog(DataHandler))
