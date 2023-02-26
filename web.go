@@ -84,3 +84,5 @@ func web() {
 		glog.Error("topics did not init, can't start web server")
 		return
 	}
+	http.Handle("/api/addtask", rest.WithLog(AddTaskHandler))
+	http.Handle("/api/status", rest.WithLog(StatusHandler))
