@@ -89,3 +89,4 @@ func web() {
 	http.Handle("/api/data", rest.WithLog(DataHandler))
 	glog.Info("rest server listen on", *addr)
 	glog.Error(http.ListenAndServe(*addr, nil))
+}
